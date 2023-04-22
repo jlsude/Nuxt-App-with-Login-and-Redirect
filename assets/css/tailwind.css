@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-mine-shaft-50: #f7f7f7;
+    --color-mine-shaft-100: #e3e3e3;
+    --color-mine-shaft-200: #c8c8c8;
+    --color-mine-shaft-300: #a4a4a4;
+    --color-mine-shaft-400: #818181;
+    --color-mine-shaft-500: #666666;
+    --color-mine-shaft-600: #515151;
+    --color-mine-shaft-700: #434343;
+    --color-mine-shaft-800: #3c3c3c;
+    --color-mine-shaft-900: #313131;
+    --color-mine-shaft-950: #1a1a1a;
+  }
+
+
+body {
+    @apply bg-gray-50;
+    
+}
+
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
+    }
+    .btn1 {
+        @apply bg-[#c4c4c4] text-black px-3 py-2 rounded-md text-sm text-black;
+    }
+    .btnregister {
+        @apply bg-[#c4c4c4] text-black px-3 py-2 rounded-md text-sm text-black;
+        font-size: 20px; /* or any other value you want */
+    }
+}
+
+header {
+    background-color: var(--color-mine-shaft-800);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
